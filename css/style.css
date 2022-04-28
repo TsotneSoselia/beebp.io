@@ -1,9 +1,10 @@
 body{
+    position: relative;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     color: #A1A4AC;
     font-weight: 400;
-    background: black;
+    background: white;
 
 }
 
@@ -26,7 +27,13 @@ body{
 
 /*************** HEADER *****************/
 .header{
-    padding: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    padding: 60px 0;
+    z-index: 9999;
 }
 
 .header_inner{
@@ -175,3 +182,94 @@ body{
 }
 
 /************** END HEADER ***************/
+
+/*************** INRTO *****************/
+
+.intro{
+    position: relative;
+    height: 100vh;
+    padding: 190px 0 140px 0;
+
+    
+}
+.intro_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.intro_bg-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.intro_inner{
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.intro_content {
+    max-width: 494px;
+}
+.intro_content-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+.intro_content-text {
+    margin: 30px 0 40px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #A1A4AC;
+}
+.intro_content-links {
+    display: flex;
+    align-items: center;
+}
+.intro_content-links-download {
+    padding: 10px 30px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+    background: #14B45C;
+    border: 1px solid #14B45C;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    transition: all .3s;
+}
+
+.intro_content-links-download:hover{
+    color: #14B45C;
+    background: transparent;
+}
+.intro_contnet-links-watch {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.intro_contnet-links-watch img{
+    margin-right: 10px;
+    transition: all .4s;
+}
+
+.intro_contnet-links-watch:hover img{
+    transform: translateY(-10px);
+}
