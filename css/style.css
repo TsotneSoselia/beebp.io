@@ -1,0 +1,177 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    color: #A1A4AC;
+    font-weight: 400;
+    background: black;
+
+}
+
+
+/* აქ ყველა ელემენტს და before = after გავუწერე reset.css ზოგიერთი სტილი  */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*************** HEADER *****************/
+.header{
+    padding: 60px;
+}
+
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.menu_list{
+    list-style: none;
+    display: flex;
+}
+
+.menu_list-item{
+    position: relative;
+
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.menu_list-link{
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu_list-link::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    transition: all .3s;
+}
+
+.menu_list-link:hover::after{
+    width: 100%;
+}
+
+.menu_list-img{
+    margin-left: 4px;
+    transition: all .3s;
+}
+
+/**********DROPDOWN ***********/
+
+.menu-dropdown{
+    position: absolute;
+
+    top: 120%;
+    left: -10px;
+    right: -10px;
+    padding: 0 10px;
+    transition: all .5s;
+
+    list-style: none;
+    background: black;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu_list-item:hover .menu-dropdown{
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu_list-item:hover .menu_list-img{
+    transform: rotate(180deg)
+}
+
+.menu-dropdown_item{
+    margin: 10px 0;
+}
+
+.menu-dropdown_link{
+    position: relative;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.menu-dropdown_link::after{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    height: 2px;
+    width: 0;
+    transition: all .5s;
+}
+
+.menu-dropdown_link:hover::after{
+    width: 100%;
+}
+/******END DROPDOWN *******/
+
+
+.header_button{
+    margin-left: 20px;
+}
+
+.header_button-link{
+    padding: 10px 30px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+    background: #14B45C;
+    border: 1px solid #14B45C;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    transition: all .3s;
+}
+
+.header_button-link:hover{
+    color: #14B45C;
+    background: transparent;
+}
+
+/************** END HEADER ***************/
