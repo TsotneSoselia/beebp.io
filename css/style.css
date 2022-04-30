@@ -251,7 +251,7 @@ body{
     align-items: center;
 }
 .intro_content-links-download {
-    padding: 10px 30px;
+    padding: 16px 31px;
 
     font-weight: 600;
     font-size: 13px;
@@ -311,6 +311,7 @@ body{
 .everneed_items{
     display: flex;
     justify-content: space-between;
+    margin-top: 160px;
 }
 .everneed_item{
     max-width: 320px;
@@ -333,7 +334,134 @@ body{
     font-size: 16px;
     line-height: 19px;
     color: #A1A4AC;
+}
+/*****************EVERNEEDD/END*/
 
+/******************FEATURES************/
+
+.features {
+    position: relative;
+    padding: 135px 0 183px;
+}
+.features_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.features_bg-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.features_row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_item {
+    margin-top: 80px;
+    padding: 40px 60px 35px 40px;
+    /*when max-width ვიყენებთ,როცა ეკრანი პატარავდება ცდება 420px_ელს,ჩარჩოს დაიკლებს,მაგრამ დაიკლდება სიგანეში და პრობლემას შემქნიდა*/
+    max-width: 420px; 
+
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 
 
+.features_item:hover{
+    box-shadow: 0px 10px 50px rgba(7, 42, 68, 0.04);
+    transition: all 0.3;
+}
+
+.features_item-inner{
+    opacity: 0.6;
+    transition: all 0.3;
+}
+
+.features_item:hover .features_item-inner{
+    opacity: 1;
+}
+
+.features_item-img {
+    width: 60px;
+    height: 60px;
+    /*rgb გამოყენება- ფერი თუ გაქ დიზაინში იღებ #_ის ფერს აწვები და rgb გადაგყავ წერ და მეოთხე მნიშვნელობაში ანიჭებ გამჭირვალობას
+    თუ რამეს ეფარება, lo va day#3 19:30*/
+    background: rgb(161, 163, 171,0.1 );
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.3;    
+}
+
+
+.features_item:hover .features_item-img{
+    background: rgb(20, 180, 92,0.1);
+}
+
+/*რატო ვუწერ .feature_item:hover, როცა პირდაპირ შემილია მივმართო .feature_item-img svg - ერთ დივშია და იმ დივს
+როცა შევეხები სურათიც იმოქმედებს პირდაპი, თუ მხოლოდ  .features_item-img svg ამას გავუწერ, სანამ ამ სურათთან
+არ მივალ არ იმოქმდებს*/
+.features_item-img svg{
+    transition: all 0.3;
+}
+
+.features_item:hover .features_item-img svg{
+    /*როცა svg შემოგვაქ ფერს fill_ით ვუთითებთ, თუ სადემ svg ფაილში სხვაგან არაა გაწერილი სხვა fill პარამეტრი 
+    იმუშავეს. LO VA day3 25:50*/
+    fill: #14B45C;
+}
+
+.features_item-title {
+    margin-bottom: 40px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #1C1F28;
+}
+.features_item-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px; 
+text-align: center;
+    color: #7A7C82;
+}
+
+.features_link{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.features_link-item{
+    padding: 16px 45px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+    
+    
+    background: #14B45C;
+    border: 1px solid #14B45C;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    transition: all .3s;
+}
+
+.features_link-item:hover{
+    color: #14B45C;
+    background: transparent;
+}
