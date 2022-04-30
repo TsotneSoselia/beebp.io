@@ -187,10 +187,7 @@ body{
 
 .intro{
     position: relative;
-    height: 100vh;
-    padding: 190px 0 140px 0;
-
-    
+    padding: 190px 0 140px 120px;
 }
 .intro_bg{
     position: absolute;
@@ -205,13 +202,34 @@ body{
     height: auto;
 }
 
+
 .intro_inner{
     display: flex;
-    align-items: center;
     z-index: 2;
+
+}
+
+.intro_img {
+    position: relative;
+    z-index: 4;
+}
+.intro_img-item {
+    height: 550px;
+}
+.intro_img2 {
+    position: absolute;
+    top: 240px;
+    left: 50px;
+
+    z-index: 3;
+
+}
+.intro_image-item2 {
+    height: 500px;
 }
 
 .intro_content {
+    margin: 160px 0 0 54px;
     max-width: 494px;
 }
 .intro_content-title {
@@ -273,3 +291,49 @@ body{
 .intro_contnet-links-watch:hover img{
     transform: translateY(-10px);
 }
+
+
+/**************** Ever need Section*************/
+
+.everneed {
+    padding: 30px 0 0 165px;
+}
+.everneed_inner {
+    
+}
+.everneed_title {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    color: #1C1F28;
+}
+.everneed_items{
+    display: flex;
+    justify-content: space-between;
+}
+.everneed_item{
+    max-width: 320px;
+    text-align: center;
+}
+
+.everneed_items-img {
+}
+
+.everneed_items-title {
+    margin: 43px 0 24px; /*m43-0-24 ასე ჩაწერ უცებ მერჯინებს, ზემოდან,მარცმარჯ და ქვევით m5-10-20-54 იგივე ოთხივეს უთითებ*/ 
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1C1F28;
+}
+
+.everneed_items-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #A1A4AC;
+
+}
+
+
