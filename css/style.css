@@ -298,9 +298,7 @@ body{
 .everneed {
     padding: 30px 0 0 165px;
 }
-.everneed_inner {
-    
-}
+
 .everneed_title {
     font-weight: 400;
     font-size: 34px;
@@ -316,9 +314,6 @@ body{
 .everneed_item{
     max-width: 320px;
     text-align: center;
-}
-
-.everneed_items-img {
 }
 
 .everneed_items-title {
