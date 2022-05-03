@@ -428,7 +428,7 @@ body{
     font-weight: 300;
     font-size: 18px;
     line-height: 24px; 
-text-align: center;
+    text-align: center;
     color: #7A7C82;
 }
 
@@ -566,10 +566,6 @@ text-align: center;
     padding: 140px 0;
 }
 
-.reviews_inner {
-
-}
-
 .reviews_title {
     font-weight: 400;
     font-size: 34px;
@@ -579,17 +575,57 @@ text-align: center;
 }
 
 .reviews_slider {
-    margin-top: 50px;
+    position: relative;
+    margin-top: 55px;
+}
+
+.reviews_slider .slick-slide{
+    display: flex;
+}
+.reviews_slider .slick-arrow{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+
+    font-size: 0;
+    color: transparent;
+
+    border: none;
+    border-radius: 50%;
+
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
+    transition: all .3s;
+}
+.reviews_slider .slick-arrow:hover{
+    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.26);
+}
+
+.reviews_slider .slick-prev{
+    top: 50%;
+    left: 0;
+    background: url(../images/arrowleft.png) no-repeat center;
+    transform: translateY(-100%);
+}
+
+.reviews_slider .slick-next{
+    right: 0;
+    top: 50%;
+    background: url(../images/arrow-right.png) no-repeat center;
+    transform: translateY(-100%);
 }
 
 .review_slide {
-    max-width: 900px;
+    padding: 0 255px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
+
 .review_slide-text {
     font-weight: normal;
     font-size: 24px;
