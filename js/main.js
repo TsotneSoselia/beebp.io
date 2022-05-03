@@ -1,4 +1,4 @@
-$(document).ready(function(){
+document.addEventListener("DOMContentLoaded", function(event){
     $('.reviews_slider').slick({
         infinite: true,
         slidesToShow: 1,
