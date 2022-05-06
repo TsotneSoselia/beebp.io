@@ -1,4 +1,4 @@
-body{
+body {
     position: relative;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
@@ -12,13 +12,13 @@ body{
 /* აქ ყველა ელემენტს და before = after გავუწერე reset.css ზოგიერთი სტილი  */
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1440px;
     padding: 0 15px;
@@ -26,7 +26,7 @@ body{
 }
 
 /*************** HEADER *****************/
-.header{
+.header {
     position: absolute;
     top: 0;
     left: 0;
@@ -36,34 +36,34 @@ body{
     z-index: 9999;
 }
 
-.header_inner{
+.header_inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu{
+.menu {
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
 
 }
 
-.menu_list{
+.menu_list {
     list-style: none;
     display: flex;
 }
 
-.menu_list-item{
+.menu_list-item {
     position: relative;
 
     margin: 0 20px;
     display: flex;
     align-items: center;
-    
+
 }
 
-.menu_list-link{
+.menu_list-link {
     position: relative;
 
     font-style: normal;
@@ -74,7 +74,7 @@ body{
     text-decoration: none;
 }
 
-.menu_list-link::after{
+.menu_list-link::after {
     content: '';
 
     position: absolute;
@@ -86,18 +86,18 @@ body{
     transition: all .3s;
 }
 
-.menu_list-link:hover::after{
+.menu_list-link:hover::after {
     width: 100%;
 }
 
-.menu_list-img{
+.menu_list-img {
     margin-left: 4px;
     transition: all .3s;
 }
 
 /**********DROPDOWN ***********/
 
-.menu-dropdown{
+.menu-dropdown {
     position: absolute;
 
     top: 120%;
@@ -112,21 +112,21 @@ body{
     visibility: hidden;
 }
 
-.menu_list-item:hover .menu-dropdown{
+.menu_list-item:hover .menu-dropdown {
     top: 100%;
     opacity: 1;
     visibility: visible;
 }
 
-.menu_list-item:hover .menu_list-img{
+.menu_list-item:hover .menu_list-img {
     transform: rotate(180deg)
 }
 
-.menu-dropdown_item{
+.menu-dropdown_item {
     margin: 10px 0;
 }
 
-.menu-dropdown_link{
+.menu-dropdown_link {
     position: relative;
 
     font-style: normal;
@@ -137,7 +137,7 @@ body{
     text-decoration: none;
 }
 
-.menu-dropdown_link::after{
+.menu-dropdown_link::after {
     content: '';
 
     position: absolute;
@@ -149,17 +149,18 @@ body{
     transition: all .5s;
 }
 
-.menu-dropdown_link:hover::after{
+.menu-dropdown_link:hover::after {
     width: 100%;
 }
+
 /******END DROPDOWN *******/
 
 
-.header_button{
+.header_button {
     margin-left: 20px;
 }
 
-.header_button-link{
+.header_button-link {
     padding: 10px 30px;
 
     font-weight: 600;
@@ -167,7 +168,7 @@ body{
     line-height: 15px;
     color: #FFFFFF;
     text-decoration: none;
-    
+
     background: #14B45C;
     border: 1px solid #14B45C;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -176,7 +177,7 @@ body{
     transition: all .3s;
 }
 
-.header_button-link:hover{
+.header_button-link:hover {
     color: #14B45C;
     background: transparent;
 }
@@ -185,11 +186,12 @@ body{
 
 /*************** INRTO *****************/
 
-.intro{
+.intro {
     position: relative;
     padding: 190px 0 140px 120px;
 }
-.intro_bg{
+
+.intro_bg {
     position: absolute;
     top: 0;
     left: 0;
@@ -197,13 +199,14 @@ body{
     bottom: 0;
     z-index: -1;
 }
-.intro_bg-img{
+
+.intro_bg-img {
     max-width: 100%;
     height: auto;
 }
 
 
-.intro_inner{
+.intro_inner {
     display: flex;
     z-index: 2;
 
@@ -213,9 +216,11 @@ body{
     position: relative;
     z-index: 4;
 }
+
 .intro_img-item {
     height: 550px;
 }
+
 .intro_img2 {
     position: absolute;
     top: 240px;
@@ -224,6 +229,7 @@ body{
     z-index: 3;
 
 }
+
 .intro_image-item2 {
     height: 500px;
 }
@@ -232,12 +238,14 @@ body{
     margin: 160px 0 0 54px;
     max-width: 494px;
 }
+
 .intro_content-title {
     font-weight: 300;
     font-size: 40px;
     line-height: 50px;
     color: #FFFFFF;
 }
+
 .intro_content-text {
     margin: 30px 0 40px;
 
@@ -246,10 +254,12 @@ body{
     line-height: 28px;
     color: #A1A4AC;
 }
+
 .intro_content-links {
     display: flex;
     align-items: center;
 }
+
 .intro_content-links-download {
     padding: 16px 31px;
 
@@ -258,7 +268,7 @@ body{
     line-height: 15px;
     color: #FFFFFF;
     text-decoration: none;
-    
+
     background: #14B45C;
     border: 1px solid #14B45C;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -267,10 +277,11 @@ body{
     transition: all .3s;
 }
 
-.intro_content-links-download:hover{
+.intro_content-links-download:hover {
     color: #14B45C;
     background: transparent;
 }
+
 .intro_contnet-links-watch {
     margin-left: 30px;
     display: flex;
@@ -283,12 +294,12 @@ body{
     text-decoration: none;
 }
 
-.intro_contnet-links-watch img{
+.intro_contnet-links-watch img {
     margin-right: 10px;
     transition: all .4s;
 }
 
-.intro_contnet-links-watch:hover img{
+.intro_contnet-links-watch:hover img {
     transform: translateY(-10px);
 }
 
@@ -306,18 +317,21 @@ body{
     text-align: center;
     color: #1C1F28;
 }
-.everneed_items{
+
+.everneed_items {
     display: flex;
     justify-content: space-between;
     margin-top: 160px;
 }
-.everneed_item{
+
+.everneed_item {
     max-width: 320px;
     text-align: center;
 }
 
 .everneed_items-title {
-    margin: 43px 0 24px; /*m43-0-24 ასე ჩაწერ უცებ მერჯინებს, ზემოდან,მარცმარჯ და ქვევით m5-10-20-54 იგივე ოთხივეს უთითებ*/ 
+    margin: 43px 0 24px;
+    /*m43-0-24 ასე ჩაწერ უცებ მერჯინებს, ზემოდან,მარცმარჯ და ქვევით m5-10-20-54 იგივე ოთხივეს უთითებ*/
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
@@ -330,6 +344,7 @@ body{
     line-height: 19px;
     color: #A1A4AC;
 }
+
 /*****************EVERNEEDD/END*/
 
 /******************FEATURES************/
@@ -338,6 +353,7 @@ body{
     position: relative;
     padding: 135px 0 183px;
 }
+
 .features_bg {
     position: absolute;
     top: 0;
@@ -346,12 +362,13 @@ body{
     bottom: 0;
     z-index: -1;
 }
+
 .features_bg-img {
     max-width: 100%;
     height: auto;
 }
 
-.features_row{
+.features_row {
     display: flex;
     justify-content: space-between;
 }
@@ -360,24 +377,24 @@ body{
     margin-top: 80px;
     padding: 40px 60px 35px 40px;
     /*when max-width ვიყენებთ,როცა ეკრანი პატარავდება ცდება 420px_ელს,ჩარჩოს დაიკლებს,მაგრამ დაიკლდება სიგანეში და პრობლემას შემქნიდა*/
-    max-width: 420px; 
+    max-width: 420px;
 
     background: #FFFFFF;
     border-radius: 15px;
 }
 
 
-.features_item:hover{
+.features_item:hover {
     box-shadow: 0px 10px 50px rgba(7, 42, 68, 0.04);
     transition: all 0.3;
 }
 
-.features_item-inner{
+.features_item-inner {
     opacity: 0.6;
     transition: all 0.3;
 }
 
-.features_item:hover .features_item-inner{
+.features_item:hover .features_item-inner {
     opacity: 1;
 }
 
@@ -386,28 +403,28 @@ body{
     height: 60px;
     /*rgb გამოყენება- ფერი თუ გაქ დიზაინში იღებ #_ის ფერს აწვები და rgb გადაგყავ წერ და მეოთხე მნიშვნელობაში ანიჭებ გამჭირვალობას
     თუ რამეს ეფარება, lo va day#3 19:30*/
-    background: rgb(161, 163, 171,0.1 );
+    background: rgb(161, 163, 171, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    transition: all 0.3;    
+    transition: all 0.3;
 }
 
 
-.features_item:hover .features_item-img{
-    background: rgb(20, 180, 92,0.1);
+.features_item:hover .features_item-img {
+    background: rgb(20, 180, 92, 0.1);
 }
 
 /*რატო ვუწერ .feature_item:hover, როცა პირდაპირ შემილია მივმართო .feature_item-img svg - ერთ დივშია და იმ დივს
 როცა შევეხები სურათიც იმოქმედებს პირდაპი, თუ მხოლოდ  .features_item-img svg ამას გავუწერ, სანამ ამ სურათთან
 არ მივალ არ იმოქმდებს*/
-.features_item-img svg{
+.features_item-img svg {
     transition: all 0.3;
 }
 
-.features_item:hover .features_item-img svg{
+.features_item:hover .features_item-img svg {
     /*როცა svg შემოგვაქ ფერს fill_ით ვუთითებთ, თუ სადემ svg ფაილში სხვაგან არაა გაწერილი სხვა fill პარამეტრი 
     იმუშავეს. LO VA day3 25:50*/
     fill: #14B45C;
@@ -423,22 +440,23 @@ body{
 
     color: #1C1F28;
 }
+
 .features_item-text {
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
-    line-height: 24px; 
+    line-height: 24px;
     text-align: center;
     color: #7A7C82;
 }
 
-.features_link{
+.features_link {
     margin-top: 25px;
     display: flex;
     justify-content: center;
 }
 
-.features_link-item{
+.features_link-item {
     padding: 16px 45px;
 
     font-weight: 600;
@@ -446,8 +464,8 @@ body{
     line-height: 15px;
     color: #FFFFFF;
     text-decoration: none;
-    
-    
+
+
     background: #14B45C;
     border: 1px solid #14B45C;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
@@ -456,41 +474,43 @@ body{
     transition: all .3s;
 }
 
-.features_link-item:hover{
+.features_link-item:hover {
     color: #14B45C;
     background: transparent;
 }
 
 /***************BUSINESS************/
 
-.business{
+.business {
     position: relative;
     padding: 270px 0 140px;
 }
 
-.business_oval{
+.business_oval {
     position: absolute;
 }
+
 .business_oval---green {
     top: -55px;
     left: 0;
 }
+
 .business_oval---black {
     bottom: -350px;
     right: 0;
 }
 
-.business_inner {
-    
-}
+.business_inner {}
+
 .business_title {
     font-weight: normal;
     font-size: 34px;
     line-height: 40px;
     text-align: center;
-    
+
     color: #1C1F28;
 }
+
 .business_title-text {
     font-weight: 300;
     font-size: 18px;
@@ -500,16 +520,17 @@ body{
     margin-top: 10px;
 }
 
-.business_items{
+.business_items {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
 }
 
-.business_item{
+.business_item {
     max-width: 420px;
     text-align: center;
 }
+
 .business_item-img {
     max-height: 160px;
     border-radius: 15px 15px 0 0;
@@ -517,10 +538,12 @@ body{
     align-items: center;
     overflow: hidden;
 }
-..business_item-img img{
+
+..business_item-img img {
     width: 100%;
-    
+
 }
+
 .business_item-title {
     font-weight: 400;
     font-size: 24px;
@@ -528,18 +551,20 @@ body{
     color: #1C1F28;
     margin-top: 30px;
 }
+
 .business_item-text {
     font-weight: 300;
     font-size: 18px;
     line-height: 24px;
     text-align: center;
-    color: #A1A4AC; 
+    color: #A1A4AC;
     padding: 10px 60px 30px 60px;
 }
 
 .business_link {
     text-align: center;
 }
+
 .business_link-item {
     padding: 16px 58px;
     font-weight: 600;
@@ -555,7 +580,7 @@ body{
 
 }
 
-.business_link-item:hover{
+.business_link-item:hover {
     background-color: #1C1F28;
     color: #fff;
 }
@@ -563,7 +588,7 @@ body{
 /***************REVIEW************/
 
 .reviews {
-    padding: 140px 0;
+    padding: 140px 0 280px;
 }
 
 .reviews_title {
@@ -579,10 +604,11 @@ body{
     margin-top: 55px;
 }
 
-.reviews_slider .slick-slide{
+.reviews_slider .slick-slide {
     display: flex;
 }
-.reviews_slider .slick-arrow{
+
+.reviews_slider .slick-arrow {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -599,18 +625,19 @@ body{
     box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
     transition: all .3s;
 }
-.reviews_slider .slick-arrow:hover{
+
+.reviews_slider .slick-arrow:hover {
     box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.26);
 }
 
-.reviews_slider .slick-prev{
+.reviews_slider .slick-prev {
     top: 50%;
     left: 0;
     background: url(../images/arrowleft.png) no-repeat center;
     transform: translateY(-100%);
 }
 
-.reviews_slider .slick-next{
+.reviews_slider .slick-next {
     right: 0;
     top: 50%;
     background: url(../images/arrow-right.png) no-repeat center;
@@ -623,7 +650,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 .review_slide-text {
@@ -633,45 +660,154 @@ body{
     text-align: center;
     color: #A1A4AC;
 }
+
 .reviews_slide-info {
     display: flex;
     margin-top: 40px;
 }
+
 /*ორი ერთნაირი მქონდა,ერთზე მინდოდა გამეწერა მეორეზე არა, ამ მეთოდით მეორეს მივწვდი lova #4 51:00*/
-.reviews_slide-col + .reviews_slide-col {
-    margin-left: 30px; 
+.reviews_slide-col+.reviews_slide-col {
+    margin-left: 30px;
 }
-.reviews_slide-col{
+
+.reviews_slide-col {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 .reviews_slide-img {
     border-radius: 50%;
     width: 100px;
     height: 100px;
 
-    overflow: hidden ;
+    overflow: hidden;
 }
-.reviews_slide-img img{
+
+.reviews_slide-img img {
     width: 100%;
     height: 100%;
 }
+
 .reviews_slide-author {
     font-weight: 500;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
     color: #323643;
-    
+
 }
-.reviews_slide-rating{
+
+.reviews_slide-rating {
     margin-top: 17px;
     display: flex;
 }
-.reviews_slide-rating img{
+
+.reviews_slide-rating img {
     margin-right: 9px;
 }
 
+/**********************FOOTER******************/
+.footer {
+    position: relative;
+    padding: 110px 0 80px;
+}
+
+.footer_bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.footer_bg-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer_app {
+    position: relative;
+    padding: 92px 310px;
+    background: white;
+
+    max-width: 1140px;
+    margin: -220px auto 0;
+    border-radius: 15px;
+    box-shadow: 10px 20px 60px rgba(0, 0, 0, 0.06);
+    /*გადმოშვერილი იყო მწვანე ხაზი, ოვერფლოუმ გაასწორა*/
+    overflow: hidden;
 
 
+}
+
+/*მწვანე ხაზი გავაკეთე befor_ით*/
+.footer_app::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+    background: #14B45C;
+}
+
+.footer_app-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1C1F28;
+    text-align: center;
+}
+
+.footer_app-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #A1A4AC;
+
+    margin: 20px 0 30px;
+}
+
+.footer_app-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_app-link {
+    text-decoration: none;
+}
+
+.footer_app-link img {
+    transition: all 0.3s;
+}
+
+.footer_app-link:hover img {
+    transform: scale(1.1);
+}
+
+.footer_app-link:first-child {
+    margin-right: 15px;
+}
+
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.footer_logo-link-img {
+    transition: all 1s;
+}
+
+/*შემოვიტანეთ svg ფოტო, შიგნით გავუწერეთ ორი კლასი და ჰოვერი მივეცით*/
+.footer_logo-link:hover .footer_logo-link-img--1 {
+    transform: rotate(90deg);
+}
+
+.footer_logo-link:hover .footer_logo-link-img--2 {
+    transform: rotate(360deg);
+}

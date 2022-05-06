@@ -8,3 +8,4 @@ document.addEventListener("DOMContentLoaded", function(event){
     });
   });
 
+/*ამ კოდით გაკეთებულია სლაიდერი*/
