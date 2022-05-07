@@ -26,14 +26,24 @@ body {
 }
 
 /*************** HEADER *****************/
-.header {
+.header{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-
     padding: 60px 0;
+
     z-index: 9999;
+
+    transition: all .2s;
+}
+.header.fixed{
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #1C1F28;
 }
 
 .header_inner {
@@ -218,12 +228,12 @@ body {
 }
 
 .intro_img-item {
-    height: 550px;
+
 }
 
 .intro_img2 {
     position: absolute;
-    top: 240px;
+    top: 290px;
     left: 50px;
 
     z-index: 3;
@@ -231,7 +241,6 @@ body {
 }
 
 .intro_image-item2 {
-    height: 500px;
 }
 
 .intro_content {
@@ -716,7 +725,6 @@ body {
 
 .footer_bg {
     position: absolute;
-    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -810,4 +818,65 @@ body {
 
 .footer_logo-link:hover .footer_logo-link-img--2 {
     transform: rotate(360deg);
+}
+
+.footer_nav {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_nav-col {
+    display: flex;
+    flex-direction: column;
+}
+.footer_nav-title {
+    margin-bottom: 10px;
+    font-weight: 600px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.footer_nav-link {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.footer_nav-link:hover{
+    text-decoration: underline;
+}
+
+.footer_copy{
+    margin-top: 100px;
+    /* margin-left: -60px;
+    margin-right: -60px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copy-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.footer_copy-socials{
+    display: flex;
+}
+.footer_copy-socials-link{
+    margin-left: 20px;
+    text-decoration: none;
+    transition: all .3s;
+}
+.footer_copy-socials-link:hover{
+    transform: translateY(-10px);
+}
+
+.footer_copy-socials-link:first-child{
+    margin-left: 0;
 }
