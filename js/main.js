@@ -1,14 +1,18 @@
 
 document.addEventListener("DOMContentLoaded", function(event){
+/* 
+    
+*/
+ 
 
-  let header = document.querySelector('.header');
-  let headerHeight = header.clientHeight;
+  let header = document.querySelector('.header'); //create ცვლადი. document.querySelectro('header') მივწვდი ამ კლასს html_ში
+  let headerHeight = header.clientHeight; //ჰედერის სიმაღლე განვსაზღვრე
 
-  window.onscroll = function(){
-  if(window.pageYOffset > headerHeight){
-    header.classList.add('fixed');
+  window.onscroll = function(){ // window.onscroll = სქროლვისას
+  if(window.pageYOffset > headerHeight){ //window.pageYOffset თუ ფანსჯირს სიმაღლე მეტი იქნება ჰედერის სიმაღლეზე
+    header.classList.add('fixed'); //ჰედერს დაუმატე კიდე კლასი fixed. ეგ კლასი გავსტილე css_ში
   }else{
-    header.classList.remove('fixed')
+    header.classList.remove('fixed') //თუ არადა მოაშორე
   }
 }
 
