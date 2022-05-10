@@ -890,10 +890,9 @@ body {
 
 .footer_copy {
     margin-top: 100px;
-    /* margin-left: -60px;
-    margin-right: -60px; */
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer_copy-text {
@@ -1092,9 +1091,6 @@ body {
         padding: 30px 45px 30px 30px;
     }
 
-    .footer_app-link:first-child {
-        margin-top: 50px;
-    }
 }
 
 @media(max-width: 1100px) {
@@ -1304,19 +1300,27 @@ body {
     .features_item-inner {
         text-align: center;
     }
-    .footer_bg-img{
+
+    .footer_bg-img {
         width: 180%;
     }
-    .footer_nav{
+
+    .footer_nav {
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    .footer_nav-col{
-        margin: 20px 20px;
+
+    .footer_nav-col {
+        width: 25%;
+        padding: 20px 20px;
     }
 }
 
 @media(max-width: 600px) {
+    .everneed_items {
+        margin-top: 20px;
+    }
+
     .features_bg-img {
         height: 178%;
     }
@@ -1351,7 +1355,7 @@ body {
         top: 60%;
     }
 
-    .reviews_slide-text {
+    f .reviews_slide-text {
         font-size: 18px;
         line-height: 24px;
     }
@@ -1369,6 +1373,74 @@ body {
         justify-content: center;
     }
 
+    .footer_app-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .footer_app-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .footer_app-link {
+        width: 100px;
+    }
+
+    .footer_app-link img {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 530px) {
+    .reviews {
+        padding: 100px 0 120px;
+    }
+
+    .footer {
+        padding: 0 0 30px;
+    }
+
+    .footer_app {
+        margin: 10px auto 0;
+        padding: 25px 20px;
+    }
+
+    .footer_app-text {
+        margin: 20px 0;
+    }
+
+    .footer_logo {
+        margin-top: 45px;
+    }
+
+    .footer_nav {
+        margin-top: 35px;
+    }
+
+    .footer_nav-col {
+        width: 50%;
+    }
+
+    .footer_copy {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .footer_copy-text {
+        /*პირიქით იყო, ანუ ტექსტი ექცეოდა ზევით იკონები ქვევით,
+        order_ით შევუცვალე მდებარეობა და ტექსტი ზევით 
+        მოექცა, აიკონები ქვევით რადგან 0 გავუწერე 
+        lova day 7 1:05*/
+        order: 1;
+        margin-top: 15px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .footer_copy-socials {
+        order: 0;
+    }
 
 }
 
